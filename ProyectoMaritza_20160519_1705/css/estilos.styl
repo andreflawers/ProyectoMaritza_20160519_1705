@@ -1,0 +1,437 @@
+@import "nib"
+@import "nib/vendor"
+vendor-prefixes = webkit moz ms o official
+
+body 
+	#fondo_poppup
+		display none
+		position fixed
+		width 100%
+		height 100%
+		z-index 2000
+		background rgba(0, 0, 0, 0.45)
+
+body 
+	.entrada-principal
+		display none
+		figure
+			width 100%
+			opacity 0.7
+			img
+				display block
+				width 100%
+	.error500
+	.error404
+		text-align center
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		background-color rgba(255, 202, 144, 0.5)
+		padding 25px
+		margin 10px 18px 0px 18px
+		border-radius 33px
+		border 1px solid
+		figure
+			width 100%
+			img
+				display block
+				width 100%
+		p
+			font-size 18px
+			margin 20px 0px 0px 0px
+			color red
+			font-weight bold
+		h1
+			font-size 24px
+			margin 20px 0px 0px 0px
+			color red
+			font-weight bold
+	.main-chart
+		overflow-x auto
+	.Alert
+		display none
+		width 50%
+		padding 10px
+	.logueo-modulo
+		margin-top 14px
+	.FormModificarContrasena 
+		.update-pass
+			display block
+		div
+			margin 10px 0px
+	.FormUsuario
+		.pass
+			display flex
+			flex-direction column-reverse
+		.confirmar-pass
+			display block
+	form
+		.FormModulo
+		.FormInterfaz
+		.FormRol
+		.FormUsuario
+			input[type=text]
+			input[type=password]
+				border-radius 10px
+		fieldset
+			div
+				margin 10px 0px
+		#ContentPlaceHolder1_lblDescripcionModulo
+		#ContentPlaceHolder1_lblDescripcionInterfaz
+		#ContentPlaceHolder1_lblModulo
+		#ContentPlaceHolder1_lblNombreModulo
+		#ContentPlaceHolder1_lblDescripcionRol
+		#ContentPlaceHolder1_lblInterfaces
+		#ContentPlaceHolder1_lblSeleccioneInterfaces
+		#ContentPlaceHolder1_lblUsuario
+		#ContentPlaceHolder1_lblPersonal
+		#ContentPlaceHolder1_lblRol
+		#ContentPlaceHolder1_lblContrasena
+		#ContentPlaceHolder1_lblConfirmarContrasena
+		#ContentPlaceHolder1_lblNombresPersonal
+		#ContentPlaceHolder1_lblApellidosPersonal
+		#ContentPlaceHolder1_lblDocumento
+		#ContentPlaceHolder1_lblPoppupRol
+		#ContentPlaceHolder1_lblPasswordAnterior
+		#ContentPlaceHolder1_lblNuevoPassword
+		#ContentPlaceHolder1_lblConfirmarNuevoPassword
+		label[for=ContentPlaceHolder1_chkModificarContrsena]
+			font-size 16px
+			color black
+		.clas_personal
+			display flex
+			flex-direction row
+			align-items center
+			.visualizacion_personal 
+				tr
+					text-align center		
+			.botonSeleccionPersonal
+				width 60px
+				cursor pointer
+				figure
+					width 100%
+					img
+						display block
+						width 100%
+						
+			.poppup_personal
+				padding 10px
+				display none
+				position fixed
+				z-index 3000
+				width 85%
+				height 90%
+				background #fff
+				top 5%
+				right 7.5%
+				section
+					width: 100%;
+					height: 100%;
+					overflow-x: auto;
+		.clas_rol
+			display flex
+			flex-direction row
+			align-items center
+			.botonSeleccionRol 
+				width 60px
+				cursor pointer
+				figure 
+					width 100%
+					img
+						display block
+						width 100%
+			.poppup_rol
+				padding 10px
+				display none
+				position fixed
+				z-index 3000
+				width 85%
+				height 90%
+				background #fff
+				top 5%
+				right 7.5%
+				section
+					width: 100%;
+					height: 100%;
+					overflow-x: auto;
+		.clas_interfaz
+			display flex
+			flex-direction row
+			align-items center
+			.botonSeleccionInterfaces
+				display block
+				width 60px
+				figure 
+					width 100%
+					img
+						width 100%
+						cursor pointer
+			.poppup_interfaz
+				padding 10px
+				display none
+				position fixed
+				z-index 3000
+				width 85%
+				height 90%
+				background #fff
+				top 5%
+				right 7.5%
+				section
+					width: 100%;
+					height: 100%;
+					overflow-x: auto;
+		.clas_modulo
+			display flex
+			flex-direction row
+			align-items center
+			.botonSeleccionModulo 
+				width 60px
+				cursor pointer
+				figure 
+					width 100%
+					img
+						display block
+						width 100%
+			.poppup_modulo
+				padding 10px
+				display none
+				position fixed
+				z-index 3000
+				width 85%
+				height 90%
+				background #fff
+				top 5%
+				right 7.5%
+				section
+					width: 100%;
+					height: 100%;
+					overflow-x: auto;
+		.close_poppup
+			width 40px
+			position absolute
+			right -14px
+			top -14px
+			cursor pointer
+			img
+				display block
+				width 100%
+		
+		.FormModulo
+			#ContentPlaceHolder1_txtIdModificar
+				display none
+			#ContentPlaceHolder1_gdvListaModulos
+				tr
+					th:nth-child(1)
+					td:nth-child(1)
+						display none
+		.FormInterfaz
+			#ContentPlaceHolder1_txtSeleccionModulo
+			#ContentPlaceHolder1_txtInterfazModificar
+				display none
+			#ContentPlaceHolder1_gdvListaInterfaz
+				tr
+					th:nth-child(1)
+					th:nth-child(2)
+					td:nth-child(1)
+					td:nth-child(2)
+						display none
+			#ContentPlaceHolder1_gdvListarModulos
+				tr
+					th:nth-child(1)
+					td:nth-child(1)
+						display none
+		.FormRol
+			#ContentPlaceHolder1_txtIdModificar
+				display none
+			#ContentPlaceHolder1_gdvListarPoppupInterfaces
+			#ContentPlaceHolder1_gdvListaRol
+				tr
+					th:nth-child(1)
+					td:nth-child(1)
+						display none
+		.FormUsuario
+			#ContentPlaceHolder1_txtIdRol
+			#ContentPlaceHolder1_txtIdPersonal
+			#ContentPlaceHolder1_txtIdModificar
+				display none
+			#ContentPlaceHolder1_gdvListarPoppupRol
+			#ContentPlaceHolder1_gdvListarPoppupPersonal
+				tr
+					th:nth-child(1)
+					td:nth-child(1)
+						display none
+			#ContentPlaceHolder1_gdvListaUsuarios
+				tr
+					th:nth-child(1)
+					th:nth-child(2)
+					th:nth-child(3)
+					td:nth-child(1)
+					td:nth-child(2)
+					td:nth-child(3)
+						display none
+			label[for="ContentPlaceHolder1_chkModificarContrsena"]
+			#ContentPlaceHolder1_chkModificarContrsena
+				display none
+				
+		/* Post Table */
+		.FormModulo
+		.FormInterfaz
+		.FormRol
+		.FormUsuario
+			table
+				border-spacing 0
+				border-collapse separate
+				width 100%
+				color #314351
+				font-size 13px
+				line-height 1em
+				margin-bottom 17px
+				font-family "museo-sans",sans-serif
+				tr
+					background white
+					&:hover
+						background #E2E2E2
+				
+			table a 
+				color #4183C4
+				text-decoration none
+			
+			table a:hover 
+				color #2a5886
+				text-decoration none
+				background-color inherit
+			
+			table th, table td 
+				border 1px solid #BCBABA
+				border-top-color #FFF
+				border-right none
+				padding 8px 20px 8px 23px
+				text-align left
+				vertical-align middle
+				// background #EEE
+				margin 0
+			
+
+			table th 
+				background #58a7e6
+				text-align left
+				font-size 1.083em
+				line-height 1.538em
+				padding 6px 20px 5px 23px
+				color #ddedfa
+				text-shadow 0px -1px 1px rgba(0, 81, 168, 0.38)
+				border-color #2c90df
+				font-weight 900
+			
+
+			table th:last-child 
+				border-right 1px solid #BCBABA
+				text-align center
+			
+
+			table td.last, table td:last-child 
+				border-right 1px solid #C2CAD0
+		/*
+
+		table .even td, table tr:nth-child(even) td 
+			background #E7E7E7*/
+					
+
+@media screen and (min-width: 480px)
+	body
+		form
+			.FormModulo
+			.FormInterfaz
+			.FormRol
+			.FormUsuario
+				input[type=text]
+				input[type=password]
+					min-width 300px !important
+@media screen and (min-width: 768px)
+	body
+		.error404
+			figure
+				width 100%
+			p
+				font-size 30px
+		.error500		
+			figure
+				width 60%
+			h1
+				font-size 34px
+		.FormUsuario
+			.pass
+				flex-direction row
+			.consult-modificar-pass
+				margin-left 20px
+		form
+			.clas_personal							
+				.poppup_personal
+					width 74%
+					right 13%
+			.clas_rol
+				.poppup_rol
+					width 74%
+					right 13%
+			.clas_interfaz
+				.poppup_interfaz
+					width 74%
+					right 13%
+			.clas_interfaz
+				.poppup_interfaz
+					width 74%
+					right 13%
+			.clas_modulo
+				.poppup_modulo
+					width 74%
+					right 13%
+
+@media screen and (min-width: 960px)
+	body
+		form
+			.clas_personal							
+				.poppup_personal
+					width 710px
+					left calc((100% - 710px)/2)
+					height 480px
+					top calc((100% - 480px)/2)
+			.clas_rol
+				.poppup_rol
+					width 710px
+					left calc((100% - 710px)/2)
+					height 480px
+					top calc((100% - 480px)/2)
+			.clas_interfaz
+				.poppup_interfaz
+					width 710px
+					left calc((100% - 710px)/2)
+					height 480px
+					top calc((100% - 480px)/2)
+			.clas_interfaz
+				.poppup_interfaz
+					width 710px
+					left calc((100% - 710px)/2)
+					height 480px
+					top calc((100% - 480px)/2)
+			.clas_modulo
+				.poppup_modulo
+					width 710px
+					left calc((100% - 710px)/2)
+					height 480px
+					top calc((100% - 480px)/2)
+
+@media screen and (min-width: 1024px)
+	body
+		.entrada-principal
+			display block
+		.error404
+			figure
+				width 50%
+		.error500
+			figure
+				width 30%
+			p
+				font-size 40px
+			h1
+				font-size 45px

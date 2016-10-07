@@ -1,0 +1,600 @@
+body #fondo_poppup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  background: rgba(0,0,0,0.45);
+}
+body .entrada-principal {
+  display: none;
+}
+body .entrada-principal figure {
+  width: 100%;
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+}
+body .entrada-principal figure img {
+  display: block;
+  width: 100%;
+}
+body .error500,
+body .error404 {
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(255,202,144,0.5);
+  padding: 25px;
+  margin: 10px 18px 0px 18px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  border: 1px solid;
+}
+body .error500 figure,
+body .error404 figure {
+  width: 100%;
+}
+body .error500 figure img,
+body .error404 figure img {
+  display: block;
+  width: 100%;
+}
+body .error500 p,
+body .error404 p {
+  font-size: 18px;
+  margin: 20px 0px 0px 0px;
+  color: #f00;
+  font-weight: bold;
+}
+body .error500 h1,
+body .error404 h1 {
+  font-size: 24px;
+  margin: 20px 0px 0px 0px;
+  color: #f00;
+  font-weight: bold;
+}
+body .main-chart {
+  overflow-x: auto;
+}
+body .Alert {
+  display: none;
+  width: 50%;
+  padding: 10px;
+}
+body .logueo-modulo {
+  margin-top: 14px;
+}
+body .FormModificarContrasena .update-pass {
+  display: block;
+}
+body .FormModificarContrasena div {
+  margin: 10px 0px;
+}
+body .FormUsuario .pass {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-direction: reverse;
+  -moz-box-direction: reverse;
+  -o-box-direction: reverse;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+body .FormUsuario .confirmar-pass {
+  display: block;
+}
+body form .FormModulo input[type=text],
+body form .FormInterfaz input[type=text],
+body form .FormRol input[type=text],
+body form .FormUsuario input[type=text],
+body form .FormModulo input[type=password],
+body form .FormInterfaz input[type=password],
+body form .FormRol input[type=password],
+body form .FormUsuario input[type=password] {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+body form fieldset div {
+  margin: 10px 0px;
+}
+body form #ContentPlaceHolder1_lblDescripcionModulo,
+body form #ContentPlaceHolder1_lblDescripcionInterfaz,
+body form #ContentPlaceHolder1_lblModulo,
+body form #ContentPlaceHolder1_lblNombreModulo,
+body form #ContentPlaceHolder1_lblDescripcionRol,
+body form #ContentPlaceHolder1_lblInterfaces,
+body form #ContentPlaceHolder1_lblSeleccioneInterfaces,
+body form #ContentPlaceHolder1_lblUsuario,
+body form #ContentPlaceHolder1_lblPersonal,
+body form #ContentPlaceHolder1_lblRol,
+body form #ContentPlaceHolder1_lblContrasena,
+body form #ContentPlaceHolder1_lblConfirmarContrasena,
+body form #ContentPlaceHolder1_lblNombresPersonal,
+body form #ContentPlaceHolder1_lblApellidosPersonal,
+body form #ContentPlaceHolder1_lblDocumento,
+body form #ContentPlaceHolder1_lblPoppupRol,
+body form #ContentPlaceHolder1_lblPasswordAnterior,
+body form #ContentPlaceHolder1_lblNuevoPassword,
+body form #ContentPlaceHolder1_lblConfirmarNuevoPassword,
+body form label[for=ContentPlaceHolder1_chkModificarContrsena] {
+  font-size: 16px;
+  color: #000;
+}
+body form .clas_personal {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+body form .clas_personal .visualizacion_personal tr {
+  text-align: center;
+}
+body form .clas_personal .botonSeleccionPersonal {
+  width: 60px;
+  cursor: pointer;
+}
+body form .clas_personal .botonSeleccionPersonal figure {
+  width: 100%;
+}
+body form .clas_personal .botonSeleccionPersonal figure img {
+  display: block;
+  width: 100%;
+}
+body form .clas_personal .poppup_personal {
+  padding: 10px;
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  width: 85%;
+  height: 90%;
+  background: #fff;
+  top: 5%;
+  right: 7.5%;
+}
+body form .clas_personal .poppup_personal section {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+}
+body form .clas_rol {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+body form .clas_rol .botonSeleccionRol {
+  width: 60px;
+  cursor: pointer;
+}
+body form .clas_rol .botonSeleccionRol figure {
+  width: 100%;
+}
+body form .clas_rol .botonSeleccionRol figure img {
+  display: block;
+  width: 100%;
+}
+body form .clas_rol .poppup_rol {
+  padding: 10px;
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  width: 85%;
+  height: 90%;
+  background: #fff;
+  top: 5%;
+  right: 7.5%;
+}
+body form .clas_rol .poppup_rol section {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+}
+body form .clas_interfaz {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+body form .clas_interfaz .botonSeleccionInterfaces {
+  display: block;
+  width: 60px;
+}
+body form .clas_interfaz .botonSeleccionInterfaces figure {
+  width: 100%;
+}
+body form .clas_interfaz .botonSeleccionInterfaces figure img {
+  width: 100%;
+  cursor: pointer;
+}
+body form .clas_interfaz .poppup_interfaz {
+  padding: 10px;
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  width: 85%;
+  height: 90%;
+  background: #fff;
+  top: 5%;
+  right: 7.5%;
+}
+body form .clas_interfaz .poppup_interfaz section {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+}
+body form .clas_modulo {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+body form .clas_modulo .botonSeleccionModulo {
+  width: 60px;
+  cursor: pointer;
+}
+body form .clas_modulo .botonSeleccionModulo figure {
+  width: 100%;
+}
+body form .clas_modulo .botonSeleccionModulo figure img {
+  display: block;
+  width: 100%;
+}
+body form .clas_modulo .poppup_modulo {
+  padding: 10px;
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  width: 85%;
+  height: 90%;
+  background: #fff;
+  top: 5%;
+  right: 7.5%;
+}
+body form .clas_modulo .poppup_modulo section {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+}
+body form .close_poppup {
+  width: 40px;
+  position: absolute;
+  right: -14px;
+  top: -14px;
+  cursor: pointer;
+}
+body form .close_poppup img {
+  display: block;
+  width: 100%;
+}
+body form .FormModulo #ContentPlaceHolder1_txtIdModificar {
+  display: none;
+}
+body form .FormModulo #ContentPlaceHolder1_gdvListaModulos tr th:nth-child(1),
+body form .FormModulo #ContentPlaceHolder1_gdvListaModulos tr td:nth-child(1) {
+  display: none;
+}
+body form .FormInterfaz #ContentPlaceHolder1_txtSeleccionModulo,
+body form .FormInterfaz #ContentPlaceHolder1_txtInterfazModificar {
+  display: none;
+}
+body form .FormInterfaz #ContentPlaceHolder1_gdvListaInterfaz tr th:nth-child(1),
+body form .FormInterfaz #ContentPlaceHolder1_gdvListaInterfaz tr th:nth-child(2),
+body form .FormInterfaz #ContentPlaceHolder1_gdvListaInterfaz tr td:nth-child(1),
+body form .FormInterfaz #ContentPlaceHolder1_gdvListaInterfaz tr td:nth-child(2) {
+  display: none;
+}
+body form .FormInterfaz #ContentPlaceHolder1_gdvListarModulos tr th:nth-child(1),
+body form .FormInterfaz #ContentPlaceHolder1_gdvListarModulos tr td:nth-child(1) {
+  display: none;
+}
+body form .FormRol #ContentPlaceHolder1_txtIdModificar {
+  display: none;
+}
+body form .FormRol #ContentPlaceHolder1_gdvListarPoppupInterfaces tr th:nth-child(1),
+body form .FormRol #ContentPlaceHolder1_gdvListaRol tr th:nth-child(1),
+body form .FormRol #ContentPlaceHolder1_gdvListarPoppupInterfaces tr td:nth-child(1),
+body form .FormRol #ContentPlaceHolder1_gdvListaRol tr td:nth-child(1) {
+  display: none;
+}
+body form .FormUsuario #ContentPlaceHolder1_txtIdRol,
+body form .FormUsuario #ContentPlaceHolder1_txtIdPersonal,
+body form .FormUsuario #ContentPlaceHolder1_txtIdModificar {
+  display: none;
+}
+body form .FormUsuario #ContentPlaceHolder1_gdvListarPoppupRol tr th:nth-child(1),
+body form .FormUsuario #ContentPlaceHolder1_gdvListarPoppupPersonal tr th:nth-child(1),
+body form .FormUsuario #ContentPlaceHolder1_gdvListarPoppupRol tr td:nth-child(1),
+body form .FormUsuario #ContentPlaceHolder1_gdvListarPoppupPersonal tr td:nth-child(1) {
+  display: none;
+}
+body form .FormUsuario #ContentPlaceHolder1_gdvListaUsuarios tr th:nth-child(1),
+body form .FormUsuario #ContentPlaceHolder1_gdvListaUsuarios tr th:nth-child(2),
+body form .FormUsuario #ContentPlaceHolder1_gdvListaUsuarios tr th:nth-child(3),
+body form .FormUsuario #ContentPlaceHolder1_gdvListaUsuarios tr td:nth-child(1),
+body form .FormUsuario #ContentPlaceHolder1_gdvListaUsuarios tr td:nth-child(2),
+body form .FormUsuario #ContentPlaceHolder1_gdvListaUsuarios tr td:nth-child(3) {
+  display: none;
+}
+body form .FormUsuario label[for="ContentPlaceHolder1_chkModificarContrsena"],
+body form .FormUsuario #ContentPlaceHolder1_chkModificarContrsena {
+  display: none;
+}
+body form .FormModulo table,
+body form .FormInterfaz table,
+body form .FormRol table,
+body form .FormUsuario table {
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
+  color: #314351;
+  font-size: 13px;
+  line-height: 1em;
+  margin-bottom: 17px;
+  font-family: "museo-sans", sans-serif;
+}
+body form .FormModulo table tr,
+body form .FormInterfaz table tr,
+body form .FormRol table tr,
+body form .FormUsuario table tr {
+  background: #fff;
+}
+body form .FormModulo table tr:hover,
+body form .FormInterfaz table tr:hover,
+body form .FormRol table tr:hover,
+body form .FormUsuario table tr:hover {
+  background: #e2e2e2;
+}
+body form .FormModulo table a,
+body form .FormInterfaz table a,
+body form .FormRol table a,
+body form .FormUsuario table a {
+  color: #4183c4;
+  text-decoration: none;
+}
+body form .FormModulo table a:hover,
+body form .FormInterfaz table a:hover,
+body form .FormRol table a:hover,
+body form .FormUsuario table a:hover {
+  color: #2a5886;
+  text-decoration: none;
+  background-color: inherit;
+}
+body form .FormModulo table th,
+body form .FormInterfaz table th,
+body form .FormRol table th,
+body form .FormUsuario table th,
+body form .FormModulo table td,
+body form .FormInterfaz table td,
+body form .FormRol table td,
+body form .FormUsuario table td {
+  border: 1px solid #bcbaba;
+  border-top-color: #fff;
+  border-right: none;
+  padding: 8px 20px 8px 23px;
+  text-align: left;
+  vertical-align: middle;
+  margin: 0;
+}
+body form .FormModulo table th,
+body form .FormInterfaz table th,
+body form .FormRol table th,
+body form .FormUsuario table th {
+  background: #58a7e6;
+  text-align: left;
+  font-size: 1.083em;
+  line-height: 1.538em;
+  padding: 6px 20px 5px 23px;
+  color: #ddedfa;
+  text-shadow: 0px -1px 1px rgba(0,81,168,0.38);
+  border-color: #2c90df;
+  font-weight: 900;
+}
+body form .FormModulo table th:last-child,
+body form .FormInterfaz table th:last-child,
+body form .FormRol table th:last-child,
+body form .FormUsuario table th:last-child {
+  border-right: 1px solid #bcbaba;
+  text-align: center;
+}
+body form .FormModulo table td.last,
+body form .FormInterfaz table td.last,
+body form .FormRol table td.last,
+body form .FormUsuario table td.last,
+body form .FormModulo table td:last-child,
+body form .FormInterfaz table td:last-child,
+body form .FormRol table td:last-child,
+body form .FormUsuario table td:last-child {
+  border-right: 1px solid #c2cad0;
+}
+@media screen and (min-width: 480px) {
+  body form .FormModulo input[type=text],
+  body form .FormInterfaz input[type=text],
+  body form .FormRol input[type=text],
+  body form .FormUsuario input[type=text],
+  body form .FormModulo input[type=password],
+  body form .FormInterfaz input[type=password],
+  body form .FormRol input[type=password],
+  body form .FormUsuario input[type=password] {
+    min-width: 300px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .error404 figure {
+    width: 100%;
+  }
+  body .error404 p {
+    font-size: 30px;
+  }
+  body .error500 figure {
+    width: 60%;
+  }
+  body .error500 h1 {
+    font-size: 34px;
+  }
+  body .FormUsuario .pass {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  body .FormUsuario .consult-modificar-pass {
+    margin-left: 20px;
+  }
+  body form .clas_personal .poppup_personal {
+    width: 74%;
+    right: 13%;
+  }
+  body form .clas_rol .poppup_rol {
+    width: 74%;
+    right: 13%;
+  }
+  body form .clas_interfaz .poppup_interfaz {
+    width: 74%;
+    right: 13%;
+  }
+  body form .clas_interfaz .poppup_interfaz {
+    width: 74%;
+    right: 13%;
+  }
+  body form .clas_modulo .poppup_modulo {
+    width: 74%;
+    right: 13%;
+  }
+}
+@media screen and (min-width: 960px) {
+  body form .clas_personal .poppup_personal {
+    width: 710px;
+    left: calc((100% - 710px) / 2);
+    height: 480px;
+    top: calc((100% - 480px) / 2);
+  }
+  body form .clas_rol .poppup_rol {
+    width: 710px;
+    left: calc((100% - 710px) / 2);
+    height: 480px;
+    top: calc((100% - 480px) / 2);
+  }
+  body form .clas_interfaz .poppup_interfaz {
+    width: 710px;
+    left: calc((100% - 710px) / 2);
+    height: 480px;
+    top: calc((100% - 480px) / 2);
+  }
+  body form .clas_interfaz .poppup_interfaz {
+    width: 710px;
+    left: calc((100% - 710px) / 2);
+    height: 480px;
+    top: calc((100% - 480px) / 2);
+  }
+  body form .clas_modulo .poppup_modulo {
+    width: 710px;
+    left: calc((100% - 710px) / 2);
+    height: 480px;
+    top: calc((100% - 480px) / 2);
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .entrada-principal {
+    display: block;
+  }
+  body .error404 figure {
+    width: 50%;
+  }
+  body .error500 figure {
+    width: 30%;
+  }
+  body .error500 p {
+    font-size: 40px;
+  }
+  body .error500 h1 {
+    font-size: 45px;
+  }
+}

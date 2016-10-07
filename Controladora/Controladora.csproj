@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86355B7F-55EF-421D-AD1F-DEAE8CD9B625}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Controladora</RootNamespace>
+    <AssemblyName>Controladora</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CCArea.cs" />
+    <Compile Include="CCAsistencia.cs" />
+    <Compile Include="CCBoleta.cs" />
+    <Compile Include="CCCargo.cs" />
+    <Compile Include="CCDepartamento.cs" />
+    <Compile Include="CCDescuento.cs" />
+    <Compile Include="CCDescuentoPlanilla.cs" />
+    <Compile Include="CCDistrito.cs" />
+    <Compile Include="CCEmpresa.cs" />
+    <Compile Include="CCEncargado.cs" />
+    <Compile Include="CCFeriados.cs" />
+    <Compile Include="CCHorario.cs" />
+    <Compile Include="CCInterfaz.cs" />
+    <Compile Include="CCLogueo.cs" />
+    <Compile Include="CCModulo.cs" />
+    <Compile Include="CCMovimiento.cs" />
+    <Compile Include="CCNivelInstruccion.cs" />
+    <Compile Include="CCPermiso.cs" />
+    <Compile Include="CCPersonal.cs" />
+    <Compile Include="CCProvincia.cs" />
+    <Compile Include="CCRemuneracion.cs" />
+    <Compile Include="CCRol.cs" />
+    <Compile Include="CCSucursal.cs" />
+    <Compile Include="CCTipoDocumento.cs" />
+    <Compile Include="CCTipoMovimiento.cs" />
+    <Compile Include="CCTipoPermiso.cs" />
+    <Compile Include="CCUsuario.cs" />
+    <Compile Include="CCVacacion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidad\Entidad.csproj">
+      <Project>{beee55d9-122b-45e0-86f4-a519712a8286}</Project>
+      <Name>Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{70ed0b83-eb1e-41d4-bcf1-179d27068201}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

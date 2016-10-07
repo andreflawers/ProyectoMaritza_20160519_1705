@@ -1,0 +1,5 @@
+cd D:/Universidad/7° Ciclo/Calidad de Software/\Integracion por Torres 2/ProyectoMaritza_20160519_1705/ProyectoMaritza_20160519_1705
+
+d:
+
+stylus -u nib -w -o css/ css/estilos.styl

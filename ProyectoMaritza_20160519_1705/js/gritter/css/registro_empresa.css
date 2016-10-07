@@ -1,0 +1,132 @@
+﻿.empresa_mari{
+    display:none;
+}
+.empresa_mari:first-child{
+    display:block;
+}
+.visible{
+    display:block!important;
+}
+.ocultar{
+    display:none!important;
+}
+.errores {
+    background: crimson;
+    box-shadow : 0 0 10px rgba(0,0,0,.3);
+    color: #fff;
+    font-size: 12px;
+    padding: 4px;
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    
+}
+.input-picker{
+    font-size:11px!important;
+}
+.input-picker .picker-list td > button{
+    padding :3px!important;
+}
+.ws-date,.ws-time{
+    width: 130px!important;
+}
+.solo_cerrara_popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 10;
+    top: 0;
+}
+.solo_cerrara_popup{
+    width: 100%;
+    height: 100%;
+}
+.clasepopup_eliminar {
+    position: absolute;
+    height: 28%;
+    width: 32%;
+    background: #fff;
+    left: 34%;
+    top: 35%;
+    z-index:100000;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 2px #4c4848;
+}
+.imagen_peligro{
+    position:absolute;
+    padding: 10px 0px 0px 10px;
+    display: block;
+}
+.div_padre_popup{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.div_padre_popup h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 35px;
+    line-height: 27px;
+    color: #7ab1b7;
+    padding-top:28px;
+    padding-bottom:10px;
+}
+.div_padre_popup h5{
+    margin: 0px;
+    padding: 0px;
+    font-size: 19px;
+    line-height: 21px;
+    font-weight: normal;
+}
+.div_padre_popup div{
+    margin-top:25px;
+}
+.acepta_eliminar_personal{
+    margin-right:15px;
+}
+@media (min-width: 480px) {
+    .clasepopup_eliminar {
+        position: absolute;
+        height: 37%;
+        width: 77%;
+        background: #fff;
+        left: 13%;
+        top: 35%;
+        overflow-y: auto;
+        border-radius: 5px;
+        box-shadow: 0px 0px 4px 2px #4c4848;
+    }
+}
+@media (min-width: 768px) {
+    .clasepopup_eliminar {
+        height: 25%;
+        width: 51%;
+        left: 25%;
+        top: 40%;
+    }
+}
+@media (min-width: 1024px) {
+    .clasepopup_eliminar {
+        height: 24%;
+        width: 39%;
+        left: 37%;
+        top: 41%;
+    }
+}
+@media (min-width: 1366px) {
+    .clasepopup_eliminar {
+        height: 26%;
+        width: 27%;
+        left: 37%;
+        top: 41%;
+    }
+}
+
+.valida_si_existe_dni{
+    color: red;
+    padding-top: 10px;
+}

@@ -1,0 +1,781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F114F430-56AA-4DD4-B134-6635E95E14FC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProyectoMaritza_20160519_1705</RootNamespace>
+    <AssemblyName>ProyectoMaritza_20160519_1705</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\AdminLTE.css" />
+    <Content Include="css\AdminLTE.min.css" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\estilos.css" />
+    <Content Include="css\style-login.css" />
+    <Content Include="css\style-responsive.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\table-responsive.css" />
+    <Content Include="css\to-do.css" />
+    <Content Include="css\zabuto_calendar.css" />
+    <Content Include="font-awesome\css\font-awesome.min.css" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="imagenes\entrada-principal.jpg" />
+    <Content Include="imagenes\error404.png" />
+    <Content Include="imagenes\error500.png" />
+    <Content Include="imagenes\key.png" />
+    <Content Include="imagenes\madera.jpg" />
+    <Content Include="imagenes\mari.png" />
+    <Content Include="imagenes\panadero2.jpg" />
+    <Content Include="imagenes\peligro.png" />
+    <Content Include="js-webshim\dev\polyfiller.js" />
+    <Content Include="js-webshim\dev\shims\canvas-blob.js" />
+    <Content Include="js-webshim\dev\shims\color-picker.js" />
+    <Content Include="js-webshim\dev\shims\combos\1.js" />
+    <Content Include="js-webshim\dev\shims\combos\10.js" />
+    <Content Include="js-webshim\dev\shims\combos\11.js" />
+    <Content Include="js-webshim\dev\shims\combos\12.js" />
+    <Content Include="js-webshim\dev\shims\combos\13.js" />
+    <Content Include="js-webshim\dev\shims\combos\14.js" />
+    <Content Include="js-webshim\dev\shims\combos\15.js" />
+    <Content Include="js-webshim\dev\shims\combos\16.js" />
+    <Content Include="js-webshim\dev\shims\combos\17.js" />
+    <Content Include="js-webshim\dev\shims\combos\18.js" />
+    <Content Include="js-webshim\dev\shims\combos\2.js" />
+    <Content Include="js-webshim\dev\shims\combos\21.js" />
+    <Content Include="js-webshim\dev\shims\combos\22.js" />
+    <Content Include="js-webshim\dev\shims\combos\23.js" />
+    <Content Include="js-webshim\dev\shims\combos\25.js" />
+    <Content Include="js-webshim\dev\shims\combos\27.js" />
+    <Content Include="js-webshim\dev\shims\combos\28.js" />
+    <Content Include="js-webshim\dev\shims\combos\29.js" />
+    <Content Include="js-webshim\dev\shims\combos\3.js" />
+    <Content Include="js-webshim\dev\shims\combos\30.js" />
+    <Content Include="js-webshim\dev\shims\combos\31.js" />
+    <Content Include="js-webshim\dev\shims\combos\33.js" />
+    <Content Include="js-webshim\dev\shims\combos\34.js" />
+    <Content Include="js-webshim\dev\shims\combos\4.js" />
+    <Content Include="js-webshim\dev\shims\combos\5.js" />
+    <Content Include="js-webshim\dev\shims\combos\6.js" />
+    <Content Include="js-webshim\dev\shims\combos\7.js" />
+    <Content Include="js-webshim\dev\shims\combos\8.js" />
+    <Content Include="js-webshim\dev\shims\combos\9.js" />
+    <Content Include="js-webshim\dev\shims\combos\97.js" />
+    <Content Include="js-webshim\dev\shims\combos\98.js" />
+    <Content Include="js-webshim\dev\shims\combos\99.js" />
+    <Content Include="js-webshim\dev\shims\details.js" />
+    <Content Include="js-webshim\dev\shims\dom-extend.js" />
+    <Content Include="js-webshim\dev\shims\es5.js" />
+    <Content Include="js-webshim\dev\shims\es6.js" />
+    <Content Include="js-webshim\dev\shims\excanvas.js" />
+    <Content Include="js-webshim\dev\shims\filereader-xhr.js" />
+    <Content Include="js-webshim\dev\shims\FlashCanvasPro\canvas2png.js" />
+    <Content Include="js-webshim\dev\shims\FlashCanvasPro\flash10canvas.swf" />
+    <Content Include="js-webshim\dev\shims\FlashCanvasPro\flash9canvas.swf" />
+    <Content Include="js-webshim\dev\shims\FlashCanvasPro\flashcanvas.js" />
+    <Content Include="js-webshim\dev\shims\FlashCanvas\canvas2png.js" />
+    <Content Include="js-webshim\dev\shims\FlashCanvas\flashcanvas.js" />
+    <Content Include="js-webshim\dev\shims\FlashCanvas\flashcanvas.swf" />
+    <Content Include="js-webshim\dev\shims\form-combat.js" />
+    <Content Include="js-webshim\dev\shims\form-core.js" />
+    <Content Include="js-webshim\dev\shims\form-datalist-lazy.js" />
+    <Content Include="js-webshim\dev\shims\form-datalist.js" />
+    <Content Include="js-webshim\dev\shims\form-fixrangechange.js" />
+    <Content Include="js-webshim\dev\shims\form-inputmode.js" />
+    <Content Include="js-webshim\dev\shims\form-message.js" />
+    <Content Include="js-webshim\dev\shims\form-native-extend.js" />
+    <Content Include="js-webshim\dev\shims\form-number-date-api.js" />
+    <Content Include="js-webshim\dev\shims\form-number-date-ui.js" />
+    <Content Include="js-webshim\dev\shims\form-shim-extend.js" />
+    <Content Include="js-webshim\dev\shims\form-shim-extend2.js" />
+    <Content Include="js-webshim\dev\shims\form-validation.js" />
+    <Content Include="js-webshim\dev\shims\form-validators.js" />
+    <Content Include="js-webshim\dev\shims\forms-picker.js" />
+    <Content Include="js-webshim\dev\shims\geolocation.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-ar.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-bg.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-ca.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-ch-CN.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-cs.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-de.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-el.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-en.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-es.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-fa.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-fi.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-fr.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-he.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-hi.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-hu.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-it.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-ja.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-lt.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-nl.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-no.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-pl.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-pt-BR.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-pt-PT.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-pt.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-ru.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-sv.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-zh-CN.js" />
+    <Content Include="js-webshim\dev\shims\i18n\formcfg-zh-TW.js" />
+    <Content Include="js-webshim\dev\shims\jme\alternate-media.js" />
+    <Content Include="js-webshim\dev\shims\jme\base.js" />
+    <Content Include="js-webshim\dev\shims\jme\controls.css" />
+    <Content Include="js-webshim\dev\shims\jme\jme.svg" />
+    <Content Include="js-webshim\dev\shims\jme\mediacontrols-lazy.js" />
+    <Content Include="js-webshim\dev\shims\jme\mediacontrols.js" />
+    <Content Include="js-webshim\dev\shims\jme\playlist.js" />
+    <Content Include="js-webshim\dev\shims\jpicker\ChangeLog.txt" />
+    <Content Include="js-webshim\dev\shims\jpicker\images\AlphaBar.png" />
+    <Content Include="js-webshim\dev\shims\jpicker\images\bar-opacity.png" />
+    <Content Include="js-webshim\dev\shims\jpicker\images\Bars.png" />
+    <Content Include="js-webshim\dev\shims\jpicker\images\map-opacity.png" />
+    <Content Include="js-webshim\dev\shims\jpicker\images\mappoint.gif" />
+    <Content Include="js-webshim\dev\shims\jpicker\images\Maps.png" />
+    <Content Include="js-webshim\dev\shims\jpicker\images\NoColor.png" />
+    <Content Include="js-webshim\dev\shims\jpicker\images\picker.gif" />
+    <Content Include="js-webshim\dev\shims\jpicker\images\preview-opacity.png" />
+    <Content Include="js-webshim\dev\shims\jpicker\images\rangearrows.gif" />
+    <Content Include="js-webshim\dev\shims\jpicker\jpicker.css" />
+    <Content Include="js-webshim\dev\shims\jpicker\ReadMe.txt" />
+    <Content Include="js-webshim\dev\shims\matchMedia.js" />
+    <Content Include="js-webshim\dev\shims\mediacapture-picker.js" />
+    <Content Include="js-webshim\dev\shims\mediacapture.js" />
+    <Content Include="js-webshim\dev\shims\mediaelement-core.js" />
+    <Content Include="js-webshim\dev\shims\mediaelement-debug.js" />
+    <Content Include="js-webshim\dev\shims\mediaelement-jaris.js" />
+    <Content Include="js-webshim\dev\shims\mediaelement-native-fix.js" />
+    <Content Include="js-webshim\dev\shims\mediaelement-yt.js" />
+    <Content Include="js-webshim\dev\shims\moxie\flash\Moxie.cdn.swf" />
+    <Content Include="js-webshim\dev\shims\moxie\flash\Moxie.min.swf" />
+    <Content Include="js-webshim\dev\shims\moxie\js\moxie-html4.js" />
+    <Content Include="js-webshim\dev\shims\moxie\js\moxie-swf.js" />
+    <Content Include="js-webshim\dev\shims\picture.js" />
+    <Content Include="js-webshim\dev\shims\plugins\jquery.ui.position.js" />
+    <Content Include="js-webshim\dev\shims\range-ui.js" />
+    <Content Include="js-webshim\dev\shims\sizzle.js" />
+    <Content Include="js-webshim\dev\shims\sticky.js" />
+    <Content Include="js-webshim\dev\shims\styles\color-picker.png" />
+    <Content Include="js-webshim\dev\shims\styles\forms-ext.css" />
+    <Content Include="js-webshim\dev\shims\styles\forms-picker.css" />
+    <Content Include="js-webshim\dev\shims\styles\progress.gif" />
+    <Content Include="js-webshim\dev\shims\styles\progress.png" />
+    <Content Include="js-webshim\dev\shims\styles\shim-ext.css" />
+    <Content Include="js-webshim\dev\shims\styles\shim.css" />
+    <Content Include="js-webshim\dev\shims\styles\transparent.png" />
+    <Content Include="js-webshim\dev\shims\styles\widget.svg" />
+    <Content Include="js-webshim\dev\shims\swfmini-embed.js" />
+    <Content Include="js-webshim\dev\shims\swfmini.js" />
+    <Content Include="js-webshim\dev\shims\swf\JarisFLVPlayer.swf" />
+    <Content Include="js-webshim\dev\shims\track-ui.js" />
+    <Content Include="js-webshim\dev\shims\track.js" />
+    <Content Include="js-webshim\dev\shims\url.js" />
+    <Content Include="js-webshim\dev\shims\usermedia-core.js" />
+    <Content Include="js-webshim\dev\shims\usermedia-shim.js" />
+    <Content Include="js-webshim\minified\polyfiller.js" />
+    <Content Include="js-webshim\minified\shims\canvas-blob.js" />
+    <Content Include="js-webshim\minified\shims\color-picker.js" />
+    <Content Include="js-webshim\minified\shims\combos\1.js" />
+    <Content Include="js-webshim\minified\shims\combos\10.js" />
+    <Content Include="js-webshim\minified\shims\combos\11.js" />
+    <Content Include="js-webshim\minified\shims\combos\12.js" />
+    <Content Include="js-webshim\minified\shims\combos\13.js" />
+    <Content Include="js-webshim\minified\shims\combos\14.js" />
+    <Content Include="js-webshim\minified\shims\combos\15.js" />
+    <Content Include="js-webshim\minified\shims\combos\16.js" />
+    <Content Include="js-webshim\minified\shims\combos\17.js" />
+    <Content Include="js-webshim\minified\shims\combos\18.js" />
+    <Content Include="js-webshim\minified\shims\combos\2.js" />
+    <Content Include="js-webshim\minified\shims\combos\21.js" />
+    <Content Include="js-webshim\minified\shims\combos\22.js" />
+    <Content Include="js-webshim\minified\shims\combos\23.js" />
+    <Content Include="js-webshim\minified\shims\combos\25.js" />
+    <Content Include="js-webshim\minified\shims\combos\27.js" />
+    <Content Include="js-webshim\minified\shims\combos\28.js" />
+    <Content Include="js-webshim\minified\shims\combos\29.js" />
+    <Content Include="js-webshim\minified\shims\combos\3.js" />
+    <Content Include="js-webshim\minified\shims\combos\30.js" />
+    <Content Include="js-webshim\minified\shims\combos\31.js" />
+    <Content Include="js-webshim\minified\shims\combos\33.js" />
+    <Content Include="js-webshim\minified\shims\combos\34.js" />
+    <Content Include="js-webshim\minified\shims\combos\4.js" />
+    <Content Include="js-webshim\minified\shims\combos\5.js" />
+    <Content Include="js-webshim\minified\shims\combos\6.js" />
+    <Content Include="js-webshim\minified\shims\combos\7.js" />
+    <Content Include="js-webshim\minified\shims\combos\8.js" />
+    <Content Include="js-webshim\minified\shims\combos\9.js" />
+    <Content Include="js-webshim\minified\shims\combos\97.js" />
+    <Content Include="js-webshim\minified\shims\combos\98.js" />
+    <Content Include="js-webshim\minified\shims\combos\99.js" />
+    <Content Include="js-webshim\minified\shims\details.js" />
+    <Content Include="js-webshim\minified\shims\dom-extend.js" />
+    <Content Include="js-webshim\minified\shims\es5.js" />
+    <Content Include="js-webshim\minified\shims\es6.js" />
+    <Content Include="js-webshim\minified\shims\excanvas.js" />
+    <Content Include="js-webshim\minified\shims\filereader-xhr.js" />
+    <Content Include="js-webshim\minified\shims\FlashCanvasPro\canvas2png.js" />
+    <Content Include="js-webshim\minified\shims\FlashCanvasPro\flash10canvas.swf" />
+    <Content Include="js-webshim\minified\shims\FlashCanvasPro\flash9canvas.swf" />
+    <Content Include="js-webshim\minified\shims\FlashCanvasPro\flashcanvas.js" />
+    <Content Include="js-webshim\minified\shims\FlashCanvas\canvas2png.js" />
+    <Content Include="js-webshim\minified\shims\FlashCanvas\flashcanvas.js" />
+    <Content Include="js-webshim\minified\shims\FlashCanvas\flashcanvas.swf" />
+    <Content Include="js-webshim\minified\shims\form-combat.js" />
+    <Content Include="js-webshim\minified\shims\form-core.js" />
+    <Content Include="js-webshim\minified\shims\form-datalist-lazy.js" />
+    <Content Include="js-webshim\minified\shims\form-datalist.js" />
+    <Content Include="js-webshim\minified\shims\form-fixrangechange.js" />
+    <Content Include="js-webshim\minified\shims\form-inputmode.js" />
+    <Content Include="js-webshim\minified\shims\form-message.js" />
+    <Content Include="js-webshim\minified\shims\form-native-extend.js" />
+    <Content Include="js-webshim\minified\shims\form-number-date-api.js" />
+    <Content Include="js-webshim\minified\shims\form-number-date-ui.js" />
+    <Content Include="js-webshim\minified\shims\form-shim-extend.js" />
+    <Content Include="js-webshim\minified\shims\form-shim-extend2.js" />
+    <Content Include="js-webshim\minified\shims\form-validation.js" />
+    <Content Include="js-webshim\minified\shims\form-validators.js" />
+    <Content Include="js-webshim\minified\shims\forms-picker.js" />
+    <Content Include="js-webshim\minified\shims\geolocation.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-ar.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-bg.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-ca.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-ch-CN.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-cs.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-de.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-el.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-en.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-es.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-fa.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-fi.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-fr.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-he.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-hi.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-hu.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-it.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-ja.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-lt.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-nl.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-no.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-pl.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-pt-BR.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-pt-PT.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-pt.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-ru.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-sv.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-zh-CN.js" />
+    <Content Include="js-webshim\minified\shims\i18n\formcfg-zh-TW.js" />
+    <Content Include="js-webshim\minified\shims\jme\alternate-media.js" />
+    <Content Include="js-webshim\minified\shims\jme\base.js" />
+    <Content Include="js-webshim\minified\shims\jme\controls.css" />
+    <Content Include="js-webshim\minified\shims\jme\jme.svg" />
+    <Content Include="js-webshim\minified\shims\jme\mediacontrols-lazy.js" />
+    <Content Include="js-webshim\minified\shims\jme\mediacontrols.js" />
+    <Content Include="js-webshim\minified\shims\jme\playlist.js" />
+    <Content Include="js-webshim\minified\shims\jpicker\images\AlphaBar.png" />
+    <Content Include="js-webshim\minified\shims\jpicker\images\bar-opacity.png" />
+    <Content Include="js-webshim\minified\shims\jpicker\images\Bars.png" />
+    <Content Include="js-webshim\minified\shims\jpicker\images\map-opacity.png" />
+    <Content Include="js-webshim\minified\shims\jpicker\images\mappoint.gif" />
+    <Content Include="js-webshim\minified\shims\jpicker\images\Maps.png" />
+    <Content Include="js-webshim\minified\shims\jpicker\images\NoColor.png" />
+    <Content Include="js-webshim\minified\shims\jpicker\images\picker.gif" />
+    <Content Include="js-webshim\minified\shims\jpicker\images\preview-opacity.png" />
+    <Content Include="js-webshim\minified\shims\jpicker\images\rangearrows.gif" />
+    <Content Include="js-webshim\minified\shims\jpicker\jpicker.css" />
+    <Content Include="js-webshim\minified\shims\matchMedia.js" />
+    <Content Include="js-webshim\minified\shims\mediacapture-picker.js" />
+    <Content Include="js-webshim\minified\shims\mediacapture.js" />
+    <Content Include="js-webshim\minified\shims\mediaelement-core.js" />
+    <Content Include="js-webshim\minified\shims\mediaelement-debug.js" />
+    <Content Include="js-webshim\minified\shims\mediaelement-jaris.js" />
+    <Content Include="js-webshim\minified\shims\mediaelement-native-fix.js" />
+    <Content Include="js-webshim\minified\shims\mediaelement-yt.js" />
+    <Content Include="js-webshim\minified\shims\moxie\flash\Moxie.cdn.swf" />
+    <Content Include="js-webshim\minified\shims\moxie\flash\Moxie.min.swf" />
+    <Content Include="js-webshim\minified\shims\moxie\js\moxie-html4.js" />
+    <Content Include="js-webshim\minified\shims\moxie\js\moxie-swf.js" />
+    <Content Include="js-webshim\minified\shims\picture.js" />
+    <Content Include="js-webshim\minified\shims\plugins\jquery.ui.position.js" />
+    <Content Include="js-webshim\minified\shims\range-ui.js" />
+    <Content Include="js-webshim\minified\shims\sizzle.js" />
+    <Content Include="js-webshim\minified\shims\sticky.js" />
+    <Content Include="js-webshim\minified\shims\styles\color-picker.png" />
+    <Content Include="js-webshim\minified\shims\styles\forms-ext.css" />
+    <Content Include="js-webshim\minified\shims\styles\forms-picker.css" />
+    <Content Include="js-webshim\minified\shims\styles\progress.gif" />
+    <Content Include="js-webshim\minified\shims\styles\progress.png" />
+    <Content Include="js-webshim\minified\shims\styles\shim-ext.css" />
+    <Content Include="js-webshim\minified\shims\styles\shim.css" />
+    <Content Include="js-webshim\minified\shims\styles\transparent.png" />
+    <Content Include="js-webshim\minified\shims\styles\widget.svg" />
+    <Content Include="js-webshim\minified\shims\swfmini-embed.js" />
+    <Content Include="js-webshim\minified\shims\swfmini.js" />
+    <Content Include="js-webshim\minified\shims\swf\JarisFLVPlayer.swf" />
+    <Content Include="js-webshim\minified\shims\track-ui.js" />
+    <Content Include="js-webshim\minified\shims\track.js" />
+    <Content Include="js-webshim\minified\shims\url.js" />
+    <Content Include="js-webshim\minified\shims\usermedia-core.js" />
+    <Content Include="js-webshim\minified\shims\usermedia-shim.js" />
+    <Content Include="js\ajax_area.js" />
+    <Content Include="js\ajax_boleta.js" />
+    <Content Include="js\ajax_cargo.js" />
+    <Content Include="js\ajax_departamento.js" />
+    <Content Include="js\ajax_descuento.js" />
+    <Content Include="js\ajax_descuentoPlanilla.js" />
+    <Content Include="js\ajax_distrito.js" />
+    <Content Include="js\ajax_empresa.js" />
+    <Content Include="js\ajax_feriados.js" />
+    <Content Include="js\ajax_movimiento.js" />
+    <Content Include="js\ajax_nivelInstruccion.js" />
+    <Content Include="js\ajax_permiso.js" />
+    <Content Include="js\ajax_provincia.js" />
+    <Content Include="js\ajax_remuneracion.js" />
+    <Content Include="js\ajax_sucursal.js" />
+    <Content Include="js\ajax_tipoDocumento.js" />
+    <Content Include="js\ajax_tipoMovimiento.js" />
+    <Content Include="js\ajax_tipoPermiso.js" />
+    <Content Include="js\ajax_vacaciones.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\bootstrap3-typeahead.min.js" />
+    <Content Include="js\calendar-conf-events.js" />
+    <Content Include="js\common-scripts.js" />
+    <Content Include="js\Departamento.js" />
+    <Content Include="js\gritter\css\jquery.gritter.css" />
+    <Content Include="js\gritter\css\registro_empresa.css" />
+    <Content Include="js\gritter\images\gritter-light.png" />
+    <Content Include="js\gritter\images\gritter.png" />
+    <Content Include="js\gritter\images\ie-spacer.gif" />
+    <Content Include="js\gritter\js\jquery.gritter.js" />
+    <Content Include="js\jquery-1.8.3.min.js" />
+    <Content Include="js\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="js\jquery.backstretch.min.js" />
+    <Content Include="js\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.nicescroll.js" />
+    <Content Include="js\jquery.scrollTo.min.js" />
+    <Content Include="js\logica.js" />
+    <Content Include="js\registrar_horario_personal.js" />
+    <Content Include="js\zabuto_calendar.js" />
+    <Content Include="Paginas\AsistenciaManual.aspx" />
+    <Content Include="Paginas\CambiarContraseña.aspx" />
+    <Content Include="Paginas\ControlAsistencia.aspx" />
+    <Content Include="Paginas\EntradaPrincipal.aspx" />
+    <Content Include="Paginas\error404.aspx" />
+    <Content Include="Paginas\error500.aspx" />
+    <Content Include="Paginas\LogueoSistema.aspx" />
+    <Content Include="Paginas\Prueba2.aspx" />
+    <Content Include="Paginas\RegistrarModulo.aspx" />
+    <Content Include="Paginas\RegistrarUsuario.aspx" />
+    <Content Include="Paginas\RegistroInterfaz.aspx" />
+    <Content Include="Paginas\RegistroRol.aspx" />
+    <Content Include="Paginas\TurnoyRotaciondeHorario.aspx" />
+    <Content Include="Paginas\WfArea.aspx" />
+    <Content Include="Paginas\WfBoleta.aspx" />
+    <Content Include="Paginas\WfCargo.aspx" />
+    <Content Include="Paginas\WfDepartamento.aspx" />
+    <Content Include="Paginas\WfDescuento.aspx" />
+    <Content Include="Paginas\WfDescuentoPlanilla.aspx" />
+    <Content Include="Paginas\WfDistrito.aspx" />
+    <Content Include="Paginas\WfEmpleados.aspx" />
+    <Content Include="Paginas\WfEmpresa.aspx" />
+    <Content Include="Paginas\WfFeriados.aspx" />
+    <Content Include="Paginas\WfMovimientos.aspx" />
+    <Content Include="Paginas\WfNivelInstruccion.aspx" />
+    <Content Include="Paginas\WfPermiso.aspx" />
+    <Content Include="Paginas\WfProvincia.aspx" />
+    <Content Include="Paginas\WfRemuneracion.aspx" />
+    <Content Include="Paginas\WfSucursal.aspx" />
+    <Content Include="Paginas\WfTipoDocumento.aspx" />
+    <Content Include="Paginas\WfTipoMovimiento.aspx" />
+    <Content Include="Paginas\WfTipoPermiso.aspx" />
+    <Content Include="Paginas\WfVacaciones.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\AsistenciaManual.aspx.cs">
+      <DependentUpon>AsistenciaManual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\AsistenciaManual.aspx.designer.cs">
+      <DependentUpon>AsistenciaManual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\CambiarContraseña.aspx.cs">
+      <DependentUpon>CambiarContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\CambiarContraseña.aspx.designer.cs">
+      <DependentUpon>CambiarContraseña.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\ControlAsistencia.aspx.cs">
+      <DependentUpon>ControlAsistencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\ControlAsistencia.aspx.designer.cs">
+      <DependentUpon>ControlAsistencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\EntradaPrincipal.aspx.cs">
+      <DependentUpon>EntradaPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\EntradaPrincipal.aspx.designer.cs">
+      <DependentUpon>EntradaPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\error404.aspx.cs">
+      <DependentUpon>error404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\error404.aspx.designer.cs">
+      <DependentUpon>error404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\error500.aspx.cs">
+      <DependentUpon>error500.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\error500.aspx.designer.cs">
+      <DependentUpon>error500.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\LogueoSistema.aspx.cs">
+      <DependentUpon>LogueoSistema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\LogueoSistema.aspx.designer.cs">
+      <DependentUpon>LogueoSistema.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Prueba2.aspx.cs">
+      <DependentUpon>Prueba2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Prueba2.aspx.designer.cs">
+      <DependentUpon>Prueba2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RegistrarModulo.aspx.cs">
+      <DependentUpon>RegistrarModulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RegistrarModulo.aspx.designer.cs">
+      <DependentUpon>RegistrarModulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RegistrarUsuario.aspx.cs">
+      <DependentUpon>RegistrarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RegistrarUsuario.aspx.designer.cs">
+      <DependentUpon>RegistrarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RegistroInterfaz.aspx.cs">
+      <DependentUpon>RegistroInterfaz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RegistroInterfaz.aspx.designer.cs">
+      <DependentUpon>RegistroInterfaz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RegistroRol.aspx.cs">
+      <DependentUpon>RegistroRol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RegistroRol.aspx.designer.cs">
+      <DependentUpon>RegistroRol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\TurnoyRotaciondeHorario.aspx.cs">
+      <DependentUpon>TurnoyRotaciondeHorario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\TurnoyRotaciondeHorario.aspx.designer.cs">
+      <DependentUpon>TurnoyRotaciondeHorario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfArea.aspx.cs">
+      <DependentUpon>WfArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfArea.aspx.designer.cs">
+      <DependentUpon>WfArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfBoleta.aspx.cs">
+      <DependentUpon>WfBoleta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfBoleta.aspx.designer.cs">
+      <DependentUpon>WfBoleta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfCargo.aspx.cs">
+      <DependentUpon>WfCargo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfCargo.aspx.designer.cs">
+      <DependentUpon>WfCargo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfDepartamento.aspx.cs">
+      <DependentUpon>WfDepartamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfDepartamento.aspx.designer.cs">
+      <DependentUpon>WfDepartamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfDescuento.aspx.cs">
+      <DependentUpon>WfDescuento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfDescuento.aspx.designer.cs">
+      <DependentUpon>WfDescuento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfDescuentoPlanilla.aspx.cs">
+      <DependentUpon>WfDescuentoPlanilla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfDescuentoPlanilla.aspx.designer.cs">
+      <DependentUpon>WfDescuentoPlanilla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfDistrito.aspx.cs">
+      <DependentUpon>WfDistrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfDistrito.aspx.designer.cs">
+      <DependentUpon>WfDistrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfEmpleados.aspx.cs">
+      <DependentUpon>WfEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfEmpleados.aspx.designer.cs">
+      <DependentUpon>WfEmpleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfEmpresa.aspx.cs">
+      <DependentUpon>WfEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfEmpresa.aspx.designer.cs">
+      <DependentUpon>WfEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfFeriados.aspx.cs">
+      <DependentUpon>WfFeriados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfFeriados.aspx.designer.cs">
+      <DependentUpon>WfFeriados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfMovimientos.aspx.cs">
+      <DependentUpon>WfMovimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfMovimientos.aspx.designer.cs">
+      <DependentUpon>WfMovimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfNivelInstruccion.aspx.cs">
+      <DependentUpon>WfNivelInstruccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfNivelInstruccion.aspx.designer.cs">
+      <DependentUpon>WfNivelInstruccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfPermiso.aspx.cs">
+      <DependentUpon>WfPermiso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfPermiso.aspx.designer.cs">
+      <DependentUpon>WfPermiso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfProvincia.aspx.cs">
+      <DependentUpon>WfProvincia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfProvincia.aspx.designer.cs">
+      <DependentUpon>WfProvincia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfRemuneracion.aspx.cs">
+      <DependentUpon>WfRemuneracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfRemuneracion.aspx.designer.cs">
+      <DependentUpon>WfRemuneracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfSucursal.aspx.cs">
+      <DependentUpon>WfSucursal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfSucursal.aspx.designer.cs">
+      <DependentUpon>WfSucursal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfTipoDocumento.aspx.cs">
+      <DependentUpon>WfTipoDocumento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfTipoDocumento.aspx.designer.cs">
+      <DependentUpon>WfTipoDocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfTipoMovimiento.aspx.cs">
+      <DependentUpon>WfTipoMovimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfTipoMovimiento.aspx.designer.cs">
+      <DependentUpon>WfTipoMovimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfTipoPermiso.aspx.cs">
+      <DependentUpon>WfTipoPermiso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfTipoPermiso.aspx.designer.cs">
+      <DependentUpon>WfTipoPermiso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WfVacaciones.aspx.cs">
+      <DependentUpon>WfVacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WfVacaciones.aspx.designer.cs">
+      <DependentUpon>WfVacaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plantilla.Master.cs">
+      <DependentUpon>Plantilla.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plantilla.Master.designer.cs">
+      <DependentUpon>Plantilla.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Plantilla.Master" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="js-webshim\dev\shims\combos\comboinfo.json" />
+    <Content Include="js-webshim\dev\shims\FlashCanvasPro\proxy.php" />
+    <Content Include="js-webshim\dev\shims\FlashCanvasPro\save.php" />
+    <Content Include="js-webshim\dev\shims\FlashCanvas\proxy.php" />
+    <Content Include="js-webshim\dev\shims\FlashCanvas\save.php" />
+    <Content Include="js-webshim\dev\shims\jme\controls.scss" />
+    <Content Include="js-webshim\dev\shims\jme\jme.eot" />
+    <Content Include="js-webshim\dev\shims\jme\jme.ttf" />
+    <Content Include="js-webshim\dev\shims\jme\jme.woff" />
+    <Content Include="js-webshim\dev\shims\jme\_icons.scss" />
+    <Content Include="js-webshim\dev\shims\styles\scss\forms-ext.scss" />
+    <Content Include="js-webshim\dev\shims\styles\scss\forms-picker.scss" />
+    <Content Include="js-webshim\dev\shims\styles\scss\shim-ext.scss" />
+    <Content Include="js-webshim\dev\shims\styles\scss\shim.scss" />
+    <Content Include="js-webshim\dev\shims\styles\scss\_api-forms-ext.scss" />
+    <Content Include="js-webshim\dev\shims\styles\scss\_api-shim.scss" />
+    <Content Include="js-webshim\dev\shims\styles\scss\_extends.scss" />
+    <Content Include="js-webshim\dev\shims\styles\widget-font.zip" />
+    <Content Include="js-webshim\dev\shims\styles\widget.eot" />
+    <Content Include="js-webshim\dev\shims\styles\widget.ttf" />
+    <Content Include="js-webshim\dev\shims\styles\widget.woff" />
+    <Content Include="js-webshim\minified\shims\jme\jme.eot" />
+    <Content Include="js-webshim\minified\shims\jme\jme.ttf" />
+    <Content Include="js-webshim\minified\shims\jme\jme.woff" />
+    <Content Include="js-webshim\minified\shims\styles\widget.eot" />
+    <Content Include="js-webshim\minified\shims\styles\widget.ttf" />
+    <Content Include="js-webshim\minified\shims\styles\widget.woff" />
+    <None Include="Properties\PublishProfiles\panaderiamaritza - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controladora\Controladora.csproj">
+      <Project>{86355b7f-55ef-421d-ad1f-deae8cd9b625}</Project>
+      <Name>Controladora</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidad\Entidad.csproj">
+      <Project>{beee55d9-122b-45e0-86f4-a519712a8286}</Project>
+      <Name>Entidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9886</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:9886/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
